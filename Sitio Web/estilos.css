@@ -1,0 +1,140 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: "Homer Simpson", cursive;
+	box-sizing: border-box;
+}
+
+body
+{
+	background: #D4D4D4;
+	font-family: "Homer Simpson", cursive;
+}
+
+.contenedor
+{
+	width: 1700px;
+	max-width: 100%;
+}
+
+ul.tabs
+{
+	width: 100%;
+	background: #000000;
+	list-style: none;
+	display: flex;
+}
+
+ul.tabs li
+{
+	width: 20%;
+}
+
+ul.tabs li a
+{
+	color: #FFFFFF;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	padding: 20px 0px;
+}
+
+.active
+{
+	background: #b61c1f;
+}
+
+ul.tabs li a .tab-text
+{
+	margin-left: 8px;
+}
+
+.secciones
+{
+	width: 100%;
+	background: #D4D4D4;
+}
+
+.secciones article
+{
+	padding: 30px;
+}
+
+.secciones article b
+{	
+  	font-style: italic;
+}
+
+.secciones article h1
+{	
+	font-weight: bold;
+  	font-style: italic;
+  	text-align: center;
+}
+
+.secciones article p
+{
+	font-size: 15px;
+	text-align: justify;
+}
+
+.libros
+{
+	display: block;
+	margin: auto;
+	width: 220px;
+	height: 240px;
+}
+
+.fuente_libros
+{
+	text-align: center;
+	font-size: 14px;
+}
+
+.columna_libros
+{
+	list-style-type: none;
+	float:left;
+	margin: 0 0 0px 30px;
+}
+
+.columna_personal
+{
+	list-style-type: none;
+	float: left;
+	margin: 0 0 0px 10px;
+}
+
+.center 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 700px)
+{
+	ul.tabs li
+	{
+		flex-basis: 0;
+		flex-grow: 1;
+	}
+}
+
+@media screen and (max-width: 450px)
+{
+	ul.tabs li a
+	{
+		padding: 15px 0px;
+	}
+	ul.tabs li a .tab-text
+	{
+		display: none;
+	}
+	.secciones article
+	{
+		padding: 20px;
+	}
+}
